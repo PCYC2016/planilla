@@ -12,7 +12,9 @@ class c_Menu extends CI_Controller {
 
 	public function index()
 	{
-		$usuario = $this->session->userdata('username');
+		$usuario   = $this->session->userdata('username');
+		$loginuser = $this->session->userdata('loginuser');
+	  if ($loginuser == TRUE){ 
 		$menus = $this->menu->MenuUsuario($usuario);
 		$data['activeTabPlanilla'] = "";
 		$data['activeTabContabilidad'] = "";
@@ -59,4 +61,9 @@ class c_Menu extends CI_Controller {
 	    }
 	    $this->load->view("v_Menu",$data);
 	}
+	else{
+       $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Datos Incorrectos!</div>');
+       redirect('c_Login/index');
+    }
+  }
 }
