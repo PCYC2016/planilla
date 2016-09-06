@@ -7,14 +7,16 @@
 	<link rel="icon" type="image/jpg" href="<?php echo base_url("imagenes/favicon.jpg");?>">
 </head>
 <body>
-		<div class="container">
-			<div class="col-lg-4 col-sm-4">
-			</div>	
-			<div class="col-lg-6 col-sm-6">
-				<h1>SISTEMAS C&C</h1>
-				<p>PÁRAMETROS GENERALES DE PLANILLA</p>
-			</div>	
-		</div>
+     <div>
+           <img id="banner" src="<?php echo base_url("imagenes/banner.jpg");?>">
+     </div>           
+<div class="container">
+       <div class="col-lg-4 col-sm-4">
+       </div>	
+       <div class="col-lg-6 col-sm-6">
+           <p>PÁRAMETROS GENERALES DE PLANILLA</p>
+      </div>	
+ </div>
 		<hr>
 <div class="container">
      <div class="row">

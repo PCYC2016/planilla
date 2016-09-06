@@ -9,3 +9,8 @@
  span.inicio{
   	margin-left:200px;
   }
+  #banner {
+    margin-left:0px;
+    width:1290px;
+    height:60px;
+  }
