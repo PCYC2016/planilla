@@ -18,7 +18,9 @@ class c_Plparam extends CI_Controller {
 //Crea el array con datos de configuración para la vista
 			$datos_vista = array('rs_Empresa' => $setEmpresa);
 //Cargo la vista pasando los datos de configuacion
+			$this->load->view('v_Header');
 			$this->load->view('v_Plparam',$datos_vista);
+			$this->load->view('v_Footer');
 		}
 		else{
 			$this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Datos Incorrectos!</div>');

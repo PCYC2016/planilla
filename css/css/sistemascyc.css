@@ -185,3 +185,26 @@ body,html{
   .inicio{
     margin-left:100px;
   } 
+  /*Para el encabezado y pie que son comunes en todas las paginas*/
+    .Header{
+    text-align:center;
+    background-color:#363b3f;
+    margin-left:-75px;
+    width:125%;
+  }
+  #Header{
+    color:#fff;
+    font-family:"Times New Roman";
+    font-size:40px;
+  }
+  .Footer{
+    text-align:center;
+    background-color:#363b3f;
+    margin-left:-75px;
+    width:125%;
+  }
+  #Footer{
+    color:#fff;
+    font-family:"Times New Roman";
+    font-size:20px;
+  }

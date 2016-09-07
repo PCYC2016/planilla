@@ -21,6 +21,7 @@ class c_Login extends CI_Controller
           $this->form_validation->set_rules("txt_username", "Usuario", "trim|required");
           $this->form_validation->set_rules("txt_password", "Contraseña", "trim|required");
           if ($this->form_validation->run() == FALSE){
+               $this->load->view('v_Header');
                $this->load->view('v_Login');
           }
           else{
