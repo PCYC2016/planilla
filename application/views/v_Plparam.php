@@ -1,26 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Párametros generales de la planilla</title>
-	<link href="<?php echo base_url("css/css/bootstrap.css");?>" rel="stylesheet" media="all">
-	<link href="<?php echo base_url("css/css/plparam.css")?>" rel="stylesheet" media="all">
-	<link rel="icon" type="image/jpg" href="<?php echo base_url("imagenes/favicon.jpg");?>">
+  <link href="<?php echo base_url("css/css/v_Plparam.css");?>" rel="stylesheet" media="all">
 </head>
 <body>
      <div class="container">     
-          <div class="col-lg-12 col-xs-12 banner">
-             <h1>SISTEMAS C&C</h1>
-         </div>
-    </div>                
-    <div class="container">
-        <div class="col-lg-4 col-sm-4">
-        </div>	
-        <div class="col-lg-6 col-sm-6">
-         <h3>PÁRAMETROS GENERALES DE PLANILLA</h3>
-    </div>	
-</div>
-<hr>
-<div class="container">
+          <div class="col-lg-4 col-xs-12 Header">
+            <h1 id="Header">SISTEMAS C&C</h1>
+       </div>
+  </div>                
+  <div class="container">
+       <div class="col-lg-4 col-sm-4">
+       </div>	
+       <div class="col-lg-6 col-sm-6">
+           <h3>PÁRAMETROS GENERALES DE PLANILLA</h3>
+      </div>	
+ </div>
+ <hr>
+ <div class="container">
      <div class="row">
           <div class="col-lg-3 col-xs-3">
           </div>
@@ -129,5 +123,3 @@
           </div>
      </div>
 </div>
-</body>
-</html>
