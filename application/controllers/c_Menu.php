@@ -59,6 +59,7 @@ class c_Menu extends CI_Controller {
 			$data['activeTabInventario'] = $this->multi_menu->render();
 	     }
 	    }
+	    $this->load->view('v_Header');
 	    $this->load->view("v_Menu",$data);
 	}
 	else{

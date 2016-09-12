@@ -17,7 +17,9 @@ class c_Bancos extends CI_Controller {
 //creo el array con datos de configuración para la vista
 			$datos_vista = array('rs_Bancos' => $setBancos);
 //cargo la vista pasando los datos de configuacion
+			$this->load->view('v_Header');
 			$this->load->view('v_Bancos',$datos_vista);
+			$this->load->view('v_Footer');
 		}
 		else{
 			$this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Datos Incorrectos!</div>');

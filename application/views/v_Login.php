@@ -1,10 +1,11 @@
 <link href="<?php echo base_url("css/css/v_Login.css");?>" rel="stylesheet" media="all">
+<script src="<?php echo base_url("js/v_Login.js");?>"></script>
 </head>
 <body>
  <div class="container">     
-  <div class="col-lg-6 col-xs-12 Header">
-   <h1 id="Header">SISTEMAS C&C</h1>
- </div>
+  <div class="col-lg-8 col-xs-12 Header">
+    <h1 id="Header">SISTEMAS C&C</h1>
+ </div>        
 </div>  
 <hr/>
 <div class="container">
@@ -52,4 +53,4 @@
 <?php echo $this->session->flashdata('msg'); ?>
 </div>
 </div>
-</div>
+</div> 
