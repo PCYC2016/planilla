@@ -23,6 +23,7 @@ class c_Login extends CI_Controller
           if ($this->form_validation->run() == FALSE){
                $this->load->view('v_Header');
                $this->load->view('v_Login');
+               $this->load->view('v_Footer');
           }
           else{
                if ($this->input->post('btn_login') == "Acceder"){
@@ -33,7 +34,6 @@ class c_Login extends CI_Controller
                               'loginuser' => TRUE
                          );
                          $this->session->set_userdata($sessiondata);
-                         $this->session->set_flashdata('usuario',$username);
                          redirect('c_Menu/index');
                     }
                     else{
@@ -42,6 +42,7 @@ class c_Login extends CI_Controller
                     }
                }
                else{
+                    $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Datos Incorrectos!</div>');
                     redirect('c_login/index');
                }
           }

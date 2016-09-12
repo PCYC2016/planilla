@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">    
-  <title>Sistema Planillero</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="<?php echo base_url("css/css/bootstrap.css");?>" rel="stylesheet" media="all">
-  <link href="<?php echo base_url("css/css/bootstrap-submenu.css");?>" rel="stylesheet" media="all">
-  <link href="<?php echo base_url("css/css/sistemascyc.css")?>" rel="stylesheet" media="all">
-  <link rel="icon" type="image/jpg" href="<?php echo base_url("imagenes/favicon.jpg");?>">
-  <script src="<?php echo base_url("js/jquery.js");?>"></script>
-  <script src="<?php echo base_url("css/js/bootstrap.js");?>"></script>
-  <script type="text/javascript">
-  $(document).ready(function () {
-    $(".navbar-nav li.cerrar a").click(function(event) {
-      $("nav.sidebar").css({
-        marginLeft:'-160px'});
-      $(".glyphicon").css({
-        marginLeft:'150px'});
-      $(".MenuPrincipal").css({
-        height: '20px'});
-    });
-    $(".navbar-nav li.cerrar a").dblclick(function(event) {
-      $("nav.sidebar").css({
-        marginLeft:'0px'});
-      $(".glyphicon").css({
-        marginLeft:'0px'});
-    });
-  });
-  </script>   
+<script src="<?php echo base_url("js/sistemascyc.js");?>"></script> 
 </head>
 <body>
   <nav class="navbar navbar-default sidebar" role="navigation">
