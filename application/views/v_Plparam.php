@@ -1,30 +1,30 @@
   <link href="<?php echo base_url("css/css/v_Plparam.css");?>" rel="stylesheet" media="all">
 </head>
 <body>
-     <div class="container">     
+     <header>     
           <div class="col-lg-8 col-xs-12 Header">
             <h1 id="Header">SISTEMAS C&C</h1>
        </div>
-     </div>                
-     <div class="container">
-       <div class="col-lg-4 col-sm-4">
+  </header>                
+  <div class="container">
+       <div class="col-lg-4 col-xs-4">
        </div>	
-       <div class="col-lg-6 col-sm-6">
+       <div class="col-lg-6 col-xs-12">
            <h3>PÁRAMETROS GENERALES DE PLANILLA</h3>
       </div>	
-     </div>
+ </div>
  <hr>
  <div class="container">
      <div class="row">
-          <div class="col-lg-3 col-xs-3">
+          <div class="col-lg-3 col-xs-2"> 
           </div>
-          <div class="col-lg-6 col-xs-10 well">
+          <div class="col-lg-6 col-xs-11 well">
                <fieldset>
                     <legend> <span class="inicio">PÁRAMETROS</span></legend>
                     <?php foreach($rs_Empresa as $fila){ ?>
                     <div class="form-group">
                          <div class="row colbox">
-                              <div class="col-lg-4 col-sm-4">
+                              <div class="col-lg-4 col-xs-12">
                                    <label for="txt_FormaPago" class="control-label">Forma de pago</label>
                               </div>
                               <div class="col-lg-6 col-xs-12">
@@ -34,7 +34,7 @@
                     </div> 
                     <div class="form-group">
                          <div class="row colbox">
-                              <div class="col-lg-4 col-sm-4">
+                              <div class="col-lg-4 col-xs-12">
                                    <label for="txt_DiasLabor" class="control-lable">Días de labor al mes</label>
                               </div>
                               <div class="col-lg-6 col-xs-12">
@@ -44,7 +44,7 @@
                     </div>
                     <div class="form-group">
                          <div class="row colbox">
-                              <div class="col-lg-4 col-sm-4">
+                              <div class="col-lg-4 col-xs-12">
                                    <label for="txt_HorasDia" class="control-label">Horas trabajo al día</label>
                               </div>
                               <div class="col-lg-6 col-xs-12">
@@ -54,7 +54,7 @@
                     </div> 
                     <div class="form-group">
                          <div class="row colbox">
-                              <div class="col-lg-4 col-sm-4">
+                              <div class="col-lg-4 col-xs-12">
                                    <label for="txt_HorasNoche" class="control-lable">Horas trabajo por noche</label>
                               </div>
                               <div class="col-lg-6 col-xs-12">
@@ -64,7 +64,7 @@
                     </div>
                     <div class="form-group">
                          <div class="row colbox">
-                              <div class="col-lg-4 col-sm-4">
+                              <div class="col-lg-4 col-xs-12">
                                    <label for="txt_FactorHED" class="control-lable">Factor horas extras diurnas</label>
                               </div>
                               <div class="col-lg-6 col-xs-12">
@@ -74,7 +74,7 @@
                     </div>  
                     <div class="form-group">
                          <div class="row colbox">
-                              <div class="col-lg-4 col-sm-4">
+                              <div class="col-lg-4 col-xs-12">
                                    <label for="txt_FactorHEN" class="control-lable">Factor horas extras nocturnas</label>
                               </div>
                               <div class="col-lg-6 col-xs-12">
@@ -84,7 +84,7 @@
                     </div> 
                     <div class="form-group">
                          <div class="row colbox">
-                              <div class="col-lg-4 col-sm-4">
+                              <div class="col-lg-4 col-xs-12">
                                    <label for="txt_FactorHEV" class="control-lable">Factor horas extras vacaciones</label>
                               </div>
                               <div class="col-lg-6 col-xs-12">
@@ -94,7 +94,7 @@
                     </div>     
                     <div class="form-group">
                          <div class="row colbox">
-                              <div class="col-lg-4 col-sm-4">
+                              <div class="col-lg-4 col-xs-12">
                                    <label for="txt_NomGerente" class="control-label">Nombre gerente</label>
                               </div>
                               <div class="col-lg-6 col-xs-12">
@@ -104,7 +104,7 @@
                     </div>
                     <div class="form-group">
                          <div class="row colbox">
-                              <div class="col-lg-4 col-sm-4">
+                              <div class="col-lg-4 col-xs-12">
                                    <label for="txt_NomContado" class="control-label">Nombre contador</label>
                               </div>
                               <div class="col-lg-6 col-xs-12">

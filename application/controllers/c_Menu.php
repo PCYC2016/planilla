@@ -61,6 +61,7 @@ class c_Menu extends CI_Controller {
 	    }
 	    $this->load->view('v_Header');
 	    $this->load->view("v_Menu",$data);
+	    $this->load->view('v_Footer');
 	}
 	else{
        $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Datos Incorrectos!</div>');
