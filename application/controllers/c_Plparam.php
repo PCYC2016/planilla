@@ -7,6 +7,7 @@ class c_Plparam extends CI_Controller {
 		$this->load->library('session');
 		//cargo el helper de url, con funciones para trabajo con URL del sitio
 		$this->load->helper('url');
+		$this->load->helper('form');
         //cargo el modelo de Empresa
 		$this->load->model('m_Plparam');
 	}

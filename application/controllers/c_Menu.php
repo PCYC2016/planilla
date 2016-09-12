@@ -2,16 +2,15 @@
 
 class c_Menu extends CI_Controller {	
 
-	public function __construct()
-	{
+	public function __construct(){
 		parent::__construct();
 		$this->load->library("multi_menu");
-		$this->load->model("m_Menu", "menu");
 		$this->load->library('session');
+		$this->load->helper('form');
+		$this->load->model("m_Menu", "menu");
 	}
 
-	public function index()
-	{
+	public function index(){
 		$usuario   = $this->session->userdata('username');
 		$loginuser = $this->session->userdata('loginuser');
 	  if ($loginuser == TRUE){ 
@@ -61,10 +60,17 @@ class c_Menu extends CI_Controller {
 	    }
 	    $this->load->view('v_Header');
 	    $this->load->view("v_Menu",$data);
+	    $this->load->view('v_Footer');
 	}
 	else{
        $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Datos Incorrectos!</div>');
        redirect('c_Login/index');
     }
+  }
+  public function Logout(){
+  	if($_SERVER['REQUEST_METHOD'] =='POST'){
+  		$this->session->sess_destroy();
+  		redirect('c_Login/index');
+  	}
   }
 }
