@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">    
-	<title>Sistema Planillero</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="<?php echo base_url("css/css/bootstrap.css");?>" rel="stylesheet" media="all">
-	<link href="<?php echo base_url("css/css/bootstrap-submenu.css");?>" rel="stylesheet" media="all">
-	<link href="<?php echo base_url("css/css/sistemascyc.css")?>" rel="stylesheet" media="all">
-	<link rel="icon" type="image/jpg" href="<?php echo base_url("imagenes/favicon.jpg");?>">
-	<script src="<?php echo base_url("js/jquery.js");?>"></script>
-	<script src="<?php echo base_url("css/js/bootstrap.js");?>"></script>
+<header id="Header">
+     <div class="container">
+          <nav class="row">     
+               <div class="col-lg-10 col-xs-12 Head">
+                    <h1 id="Head">SISTEMAS C&C</h1>
+               </div>
+               <div class="col-lg-1 col-sx-12">
+                    <a class="btn btn-primary" href="c_Menu/Logout">Cerrar</a>
+               </div>
+          </nav>    
+     </div>     
+</header>  

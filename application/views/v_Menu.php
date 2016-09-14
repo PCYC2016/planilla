@@ -1,11 +1,6 @@
 <script src="<?php echo base_url("js/sistemascyc.js");?>"></script> 
 </head>
 <body>
-  <header>   
-    <div class="col-lg-8 col-xs-12 Header">
-      <h1 id="Header">SISTEMAS C&C</h1>
-    </div>     
-  </header>
   <nav class="navbar navbar-default sidebar" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">

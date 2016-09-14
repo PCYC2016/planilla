@@ -1,11 +1,6 @@
 </head>
 <body>
-	<form method="post" action="<?php echo base_url('exportarcyc.php')?>" target="_blank">	
-		<header>     
-			<div class="col-lg-8 col-xs-12 Header">
-				<h1 id="Header">SISTEMAS C&C</h1>
-			</div>
-		</header>                
+	<form method="post" action="<?php echo base_url('exportarcyc.php')?>" target="_blank">            
 		<div class="container">
 			<div class="col-lg-4 col-xs-4">
 			</div>	
