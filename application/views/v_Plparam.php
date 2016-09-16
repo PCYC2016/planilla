@@ -1,16 +1,6 @@
 <link href="<?php echo base_url("css/css/v_Plparam.css");?>" rel="stylesheet" media="all">
 </head>
-<body>
-     <header>     
-          <div class="col-lg-6 col-xs-12 Header">
-               <h1 id="Header">SISTEMAS C&C</h1>
-          </div>
-          <div class="col-lg-6 col-xs-12 Header">
-               <?php echo form_open("c_Menu/Logout");?>
-               <button type="submit" class="btn btn-primary">Cerrar</button>
-               <?php echo form_close();?>
-          </div>
-     </header>                
+<body>              
      <div class="container">
           <div class="col-lg-4 col-xs-4">
           </div>	
