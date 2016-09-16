@@ -67,8 +67,10 @@ class c_Menu extends CI_Controller {
     }
   }
   public function Logout(){
-  		$this->session->sess_destroy();
+  	    $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Sesión cerrada con exito!</div>');
+  	    $this->session->unset_userdata('username');
+        $this->session->unset_userdata('loginuser');
   		redirect('c_Login/index');
-  		$this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Cerrar!</div>');
+  		
   }
 }

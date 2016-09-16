@@ -1,4 +1,4 @@
-<script src="<?php echo base_url("js/sistemascyc.js");?>"></script> 
+<script src="<?php echo base_url("js/v_Menu.js");?>"></script> 
 </head>
 <body>
   <nav class="navbar navbar-default sidebar" role="navigation">
@@ -51,7 +51,7 @@
           <div><span style="font-size:16px;" class="pull-left hidden-xs showopacity glyphicon glyphicon-tags"></span></div>
           <div class="MenuPrincipal">Generalidades</div>
         </a></li>
-        <li class="cerrar"><a href="#">
+        <li class="desplazar"><a href="#">
           <div><span style="font-size:16px;" class="pull-left hidden-xs showopacity glyphicon glyphicon-off"></span></div>
           <div class= "MenuPrincipal">Desplazar Menú</div>
         </a></li>

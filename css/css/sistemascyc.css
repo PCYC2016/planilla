@@ -209,13 +209,9 @@ section{
   font-size:20px;
   margin-top:9px;
 }
-#Header .container{
-    width:100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 header {
  background-color:#363b3f;  
+}
+.Cerrar{
+  margin-top:3px;
 }
