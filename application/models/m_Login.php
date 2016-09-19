@@ -4,9 +4,10 @@
  		parent::__construct();
  	}
  	function get_user($usr, $pwd){
- 		$ssql = "SELECT codusuario FROM usuarios WHERE pwdcompare('$pwd',contrasena) = 1 AND codusuario ='".$usr."'";
-        $rs_usuarios= $this->db->query($ssql);
- 		return  $rs_usuarios->result();
- 	}
- }
+        $ssql ="EXEC pc_m_Login ?,?";
+        $params = array( $pwd,$usr);
+        $rs_usuarios= $this->db->query($ssql,$params);
+ 	    return  $rs_usuarios->result();
+    }
+  }
  ?> 

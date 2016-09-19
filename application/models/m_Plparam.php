@@ -4,8 +4,7 @@
  		parent::__construct();
  	}
  	function get_Empresa(){
- 		$ssql = "SELECT FormaPago,DiasLabor,HorasDia,
- 		HorasNoche,FactorHED,FactorHEN,FactorHEV,NomGerente,NomContado FROM empresa";
+ 		$ssql = "EXECUTE pc_m_Plparam";
         $rs_Empresa = $this->db->query($ssql);
  		return  $rs_Empresa->result();
  	}

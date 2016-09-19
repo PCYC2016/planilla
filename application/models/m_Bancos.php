@@ -4,7 +4,7 @@
  		parent::__construct();
  	}
  	function get_Bancos(){
- 		$ssql = "SELECT codbanco,nombanco FROM bancos";
+ 		$ssql = "EXECUTE pc_m_Bancos";
         $rs_Bancos = $this->db->query($ssql);
  		return  $rs_Bancos->result();
  	}
