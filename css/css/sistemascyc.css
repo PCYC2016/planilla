@@ -183,14 +183,13 @@ section{
 .Head{
   text-align:center;
   background-color:#363b3f;
-  width:91%;
-  height:40px;
+  height:50px;
 }
 #Head{
   color:#fff;
   font-family:"Times New Roman";
   font-size:38px;
-  margin-top:2px;
+  margin-top:5px;
 }
 .Foot{
   text-align:center;
@@ -207,7 +206,7 @@ header {
  background-color:#363b3f;  
 }
 .Cerrar{
-  margin-top:3px;
+  margin-top:8px;
 }
 /*Menu responsivo*/
 .navbar-default
