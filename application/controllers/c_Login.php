@@ -36,12 +36,12 @@ class c_Login extends CI_Controller
                          redirect('c_Menu/index');
                     }
                     else{
-                         $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Datos Incorrectos!</div>');
+                         $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">¡Datos incorrectos!</div>');
                          redirect('c_Login/index');
                     }
                }
                else{
-                    $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Datos Incorrectos!</div>');
+                    $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">¡Datos incorrectos!</div>');
                     redirect('c_login/index');
                }
           }

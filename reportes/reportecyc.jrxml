@@ -4,7 +4,7 @@
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<queryString>
-		<![CDATA[Select codbanco,nombanco from bancos]]>
+		<![CDATA[EXECUTE pc_m_Bancos]]>
 	</queryString>
 	<field name="codbanco" class="java.lang.String"/>
 	<field name="nombanco" class="java.lang.String"/>

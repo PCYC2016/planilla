@@ -62,12 +62,12 @@ class c_Menu extends CI_Controller {
 	    $this->load->view("v_Menu",$data);
 	}
 	else{
-       $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Datos Incorrectos!</div>');
+       $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">¡Datos incorrectos!</div>');
        redirect('c_Login/index');
     }
   }
   public function Logout(){
-  	    $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Sesión cerrada con exito!</div>');
+  	    $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">¡Sesión cerrada!</div>');
   	    $this->session->unset_userdata('username');
         $this->session->unset_userdata('loginuser');
   		redirect('c_Login/index');
