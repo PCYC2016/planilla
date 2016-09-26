@@ -13,10 +13,8 @@ class c_Cuadros extends CI_Controller {
 	function index(){
 		$loginuser = $this->session->userdata('loginuser');
 		if ($loginuser == TRUE){ 
-//pido los Bancos
-			$setCuadros = $this->m_Cuadros->get_Cuadros();
 //creo el array con datos de configuración para la vista
-			$datos_vista = array('rs_Cuadros' => $setCuadros);
+			$datos_vista = $this->m_Cuadros->get_Cuadros();
 //cargo la vista pasando los datos de configuacion
 			$this->load->view('v_Head');
 			$this->load->view('v_Header');
