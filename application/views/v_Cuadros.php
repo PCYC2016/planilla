@@ -27,9 +27,9 @@
 						<div class="tab-pane fade in active">
 						   <div class="col-lg-12 col-xs-12">
 							<table class="table-bordered table-striped table-condensed table-hover">
-								<thead><th>INSTITUCIÓN</th><th>DESDE</th><th>HASTA</th>
-									<th>%</th><th>EXCESO</th><th>MÁS</th><th>FORMA DE CÁLCULO</th>
-									<th>INICIA</th><th>FINALIZA</th></thead>
+								<thead><th class="text-center">INSTITUCIÓN</th><th class="text-center">DESDE</th><th class="text-center">HASTA</th>
+									<th class="text-center">%</th><th class="text-center">EXCESO</th><th class="text-center">MÁS</th><th class="text-center">FORMA DE CÁLCULO</th>
+									<th class="text-center">INICIA</th><th class="text-center">FINALIZA</th></thead>
 									<tbody>
 										<?php	
 										foreach($rs_Isss as $fila){
@@ -55,9 +55,9 @@
 						<div class="tab-pane fade">
 						   <div class="col-lg-12 col-xs-12">
 							<table class="table-bordered table-striped table-condensed table-hover">
-								<thead><th>INSTITUCIÓN</th><th>DESDE</th><th>HASTA</th>
-									<th>%</th><th>EXCESO</th><th>MÁS</th><th>FORMA DE CÁLCULO</th>
-									<th>INICIA</th><th>FINALIZA</th></thead>
+								<thead><th class="text-center">INSTITUCIÓN</th><th class="text-center">DESDE</th><th class="text-center">HASTA</th>
+									<th class="text-center">%</th><th class="text-center">EXCESO</th><th class="text-center">MÁS</th><th class="text-center">FORMA DE CÁLCULO</th>
+									<th class="text-center">INICIA</th><th class="text-center">FINALIZA</th></thead>
 									<tbody>
 										<?php	
 										foreach($rs_AFP as $fila){
@@ -83,9 +83,9 @@
 						<div class="tab-pane fade">
 						   <div class="col-lg-12 col-xs-12">
 							<table class="table-bordered table-striped table-condensed table-hover">
-								<thead><th>TIPO</th><th>DESDE</th><th>HASTA</th>
-									<th>%</th><th>EXCESO</th><th>MÁS</th><th>FORMA DE CÁLCULO</th>
-									<th>INICIA</th><th>FINALIZA</th></thead>
+								<thead><th class="text-center">TIPO</th><th class="text-center">DESDE</th><th class="text-center">HASTA</th>
+									<th class="text-center">%</th><th class="text-center">EXCESO</th><th class="text-center">MÁS</th><th class="text-center">FORMA DE CÁLCULO</th>
+									<th class="text-center">INICIA</th><th class="text-center">FINALIZA</th></thead>
 									<tbody>
 										<?php	
 										foreach($rs_Renta as $fila){
@@ -111,8 +111,8 @@
 						<div class="tab-pane fade">
 						   <div class="col-lg-12 col-xs-12">
 							<table class="table-bordered table-striped table-condensed table-hover">
-								<thead><th>TIPO</th><th>DESDE</th><th>HASTA</th>
-									<th>%</th></thead>
+								<thead><th class="text-center">TIPO</th><th class="text-center">DESDE</th><th class="text-center">HASTA</th>
+									<th class="text-center">%</th></thead>
 									<tbody>
 										<?php	
 										foreach($rs_Dias as $fila){
@@ -133,8 +133,8 @@
 						<div class="tab-pane fade">
 						   <div class="col-lg-12 col-xs-12">
 							<table class="table-bordered table-striped table-condensed table-hover">
-								<thead><th>TIPO</th><th>DESDE</th><th>HASTA</th>
-									<th>DÍAS</th></thead>
+								<thead><th class="text-center">TIPO</th><th class="text-center">DESDE</th><th class="text-center">HASTA</th>
+									<th class="text-center">DÍAS</th></thead>
 									<tbody>
 										<?php	
 										foreach($rs_Agui as $fila){
