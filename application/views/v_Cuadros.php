@@ -15,11 +15,11 @@
 			<div class="panel with-nav-tabs panel-primary">
 				<div class="panel-heading">
 					<ul class="nav nav-tabs">
-						<li class="active"><a href="#" class="tablinks" data-toggle="tab" onclick="cambiarPestana(event, 'Isss')">ISSS</a></li>
-						<li><a href="#" class="tablinks" data-toggle="tab" onclick="cambiarPestana(event,'AFP')">AFP</a></li>
-						<li><a href="#" class="tablinks" data-toggle="tab" onclick="cambiarPestana(event,'Renta')">RENTA</a></li>
-						<li><a href="#" class="tablinks" data-toggle="tab" onclick="cambiarPestana(event,'Dias')">DÍAS</a></li>
-						<li><a href="#" class="tablinks" data-toggle="tab" onclick="cambiarPestana(event,'Agui')">AGUINALDO</a></li>
+						<li class="active"><a href="#" class="tablinks" data-toggle="tab" id="PestanaIsss">ISSS</a></li>
+						<li><a href="#" class="tablinks" data-toggle="tab" id="PestanaAFP">AFP</a></li>
+						<li><a href="#" class="tablinks" data-toggle="tab" id="PestanaRenta">RENTA</a></li>
+						<li><a href="#" class="tablinks" data-toggle="tab" id="PestanaDias">DÍAS</a></li>
+						<li><a href="#" class="tablinks" data-toggle="tab" id="PestanaAgui">AGUINALDO</a></li>
 					</ul>
 				</div>
 				<div class="panel-body">
