@@ -21,4 +21,4 @@ function cambiarPestana(evt, Pestana) {
         tabpanefade[i].className = tabpanefade[i].className.replace("tab-pane fade", "tab-pane fade in active");
     }
     evt.currentTarget.className += " active";
-}
+  }

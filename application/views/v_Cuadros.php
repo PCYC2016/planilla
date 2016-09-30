@@ -1,5 +1,5 @@
 <link href="<?php echo base_url("css/css/v_Cuadros.css");?>" rel="stylesheet" media="all">
-<script src="<?php echo base_url("js/v_Cuadros.js");?>"></script> 
+<script src="<?php echo base_url("js/v_Cuadros.js");?>"></script>
 </head>
 <body>
 	<div class="container">
@@ -27,7 +27,7 @@
 						<div class="tab-pane fade in active">
 						   <div class="col-lg-12 col-xs-12">
 							<table class="table-bordered table-striped table-condensed table-hover">
-								<thead><th class="text-center">INSTITUCIÓN</th><th class="text-center">DESDE</th><th class="text-center">HASTA</th>
+								<thead><th class="text-center">INSTITUCIÓN</th><th>DESDE</th><th class="text-center">HASTA</th>
 									<th class="text-center">%</th><th class="text-center">EXCESO</th><th class="text-center">MÁS</th><th class="text-center">FORMA DE CÁLCULO</th>
 									<th class="text-center">INICIA</th><th class="text-center">FINALIZA</th></thead>
 									<tbody>
@@ -35,11 +35,11 @@
 										foreach($rs_Isss as $fila){
 											echo '<tr>';
 											echo '<td>'.$fila->Institucio.'</td>';
-											echo '<td>'.round($fila->Desde,2).'</td>';
-											echo '<td>'.round($fila->Hasta,2).'</td>';
+											echo '<td>'.$fila->Desde.'</td>';
+											echo '<td>'.$fila->Hasta.'</td>';
 											echo '<td>'.$fila->Porcentaje.'</td>';
-											echo '<td>'.round($fila->Exceso,2).'</td>';
-											echo '<td>'.round($fila->Mas,2).'</td>';
+											echo '<td>'.$fila->Exceso.'</td>';
+											echo '<td>'.$fila->Mas.'</td>';
 											echo '<td>'.$fila->Tipo.'</td>';
 											echo '<td>'.$fila->Fechaini.'</td>';
 											echo '<td>'.$fila->Fechafin.'</td>';
@@ -63,11 +63,11 @@
 										foreach($rs_AFP as $fila){
 											echo '<tr>';
 											echo '<td>'.$fila->Institucio.'</td>';
-											echo '<td>'.round($fila->Desde,2).'</td>';
-											echo '<td>'.round($fila->Hasta,2).'</td>';
+											echo '<td>'.$fila->Desde.'</td>';
+											echo '<td>'.$fila->Hasta.'</td>';
 											echo '<td>'.$fila->Porcentaje.'</td>';
-											echo '<td>'.round($fila->Exceso,2).'</td>';
-											echo '<td>'.round($fila->Mas,2).'</td>';
+											echo '<td>'.$fila->Exceso.'</td>';
+											echo '<td>'.$fila->Mas.'</td>';
 											echo '<td>'.$fila->Tipo.'</td>';
 											echo '<td>'.$fila->Fechaini.'</td>';
 											echo '<td>'.$fila->Fechafin.'</td>';
@@ -91,11 +91,11 @@
 										foreach($rs_Renta as $fila){
 											echo '<tr>';
 											echo '<td>'.$fila->Institucio.'</td>';
-											echo '<td>'.round($fila->Desde,2).'</td>';
-											echo '<td>'.round($fila->Hasta,2).'</td>';
+											echo '<td>'.$fila->Desde.'</td>';
+											echo '<td>'.$fila->Hasta.'</td>';
 											echo '<td>'.$fila->Porcentaje.'</td>';
-											echo '<td>'.round($fila->Exceso,2).'</td>';
-											echo '<td>'.round($fila->Mas,2).'</td>';
+											echo '<td>'.$fila->Exceso.'</td>';
+											echo '<td>'.$fila->Mas.'</td>';
 											echo '<td>'.$fila->Tipo.'</td>';
 											echo '<td>'.$fila->Fechaini.'</td>';
 											echo '<td>'.$fila->Fechafin.'</td>';
@@ -118,8 +118,8 @@
 										foreach($rs_Dias as $fila){
 											echo '<tr>';
 											echo '<td>'.$fila->Institucio.'</td>';
-											echo '<td>'.round($fila->Desde).'</td>';
-											echo '<td>'.round($fila->Hasta).'</td>';
+											echo '<td>'.$fila->Desde.'</td>';
+											echo '<td>'.$fila->Hasta.'</td>';
 											echo '<td>'.$fila->Porcentaje.'</td>';
 											echo '</tr>';
 										}
@@ -140,9 +140,9 @@
 										foreach($rs_Agui as $fila){
 											echo '<tr>';
 											echo '<td>'.$fila->Institucio.'</td>';
-											echo '<td>'.round($fila->Desde).'</td>';
-											echo '<td>'.round($fila->Hasta).'</td>';
-											echo '<td>'.round($fila->Mas).'</td>';
+											echo '<td>'.$fila->Desde.'</td>';
+											echo '<td>'.$fila->Hasta.'</td>';
+											echo '<td>'.$fila->Mas.'</td>';
 											echo '</tr>';
 										}
 										?>
