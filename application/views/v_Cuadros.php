@@ -32,20 +32,19 @@
 									<th class="text-center">INICIA</th><th class="text-center">FINALIZA</th></thead>
 									<tbody>
 										<?php	
-										foreach($rs_Isss as $fila){
-											echo '<tr>';
-											echo '<td>'.$fila->Institucio.'</td>';
-											echo '<td>'.$fila->Desde.'</td>';
-											echo '<td>'.$fila->Hasta.'</td>';
-											echo '<td>'.$fila->Porcentaje.'</td>';
-											echo '<td>'.$fila->Exceso.'</td>';
-											echo '<td>'.$fila->Mas.'</td>';
-											echo '<td>'.$fila->Tipo.'</td>';
-											echo '<td>'.$fila->Fechaini.'</td>';
-											echo '<td>'.$fila->Fechafin.'</td>';
-											echo '</tr>';
-										}
-										?>
+										foreach($rs_Isss as $fila){ ?>
+											<tr>
+											<td><?php echo $fila->Institucio; ?></td>
+											<td><?php echo number_format($fila->Desde,2,".",","); ?></td>
+											<td><?php echo number_format($fila->Hasta,2,".",","); ?></td>
+											<td><?php echo number_format($fila->Porcentaje,5,"."," "); ?></td>
+											<td><?php echo number_format($fila->Exceso,2,".",","); ?></td>
+											<td><?php echo number_format($fila->Mas,2,".",","); ?></td>
+											<td><?php echo $fila->Tipo; ?></td>
+											<td><?php echo $fila->Fechaini; ?></td>
+											<td><?php echo $fila->Fechafin; ?></td>
+											</tr>
+										<?php } ?>
 									</tbody>
 								</table>
 							</div>
@@ -60,20 +59,19 @@
 									<th class="text-center">INICIA</th><th class="text-center">FINALIZA</th></thead>
 									<tbody>
 										<?php	
-										foreach($rs_AFP as $fila){
-											echo '<tr>';
-											echo '<td>'.$fila->Institucio.'</td>';
-											echo '<td>'.$fila->Desde.'</td>';
-											echo '<td>'.$fila->Hasta.'</td>';
-											echo '<td>'.$fila->Porcentaje.'</td>';
-											echo '<td>'.$fila->Exceso.'</td>';
-											echo '<td>'.$fila->Mas.'</td>';
-											echo '<td>'.$fila->Tipo.'</td>';
-											echo '<td>'.$fila->Fechaini.'</td>';
-											echo '<td>'.$fila->Fechafin.'</td>';
-											echo '</tr>';
-										}
-										?>
+										foreach($rs_AFP as $fila){ ?>
+											<tr>
+											<td><?php echo $fila->Institucio; ?></td>
+											<td><?php echo number_format($fila->Desde,2,".",","); ?></td>
+											<td><?php echo number_format($fila->Hasta,2,".",","); ?></td>
+											<td><?php echo number_format($fila->Porcentaje,4,"."," "); ?></td>
+											<td><?php echo number_format($fila->Exceso,2,".",","); ?></td>
+											<td><?php echo number_format($fila->Mas,2,".",","); ?></td>
+											<td><?php echo $fila->Tipo; ?></td>
+											<td><?php echo $fila->Fechaini; ?></td>
+											<td><?php echo $fila->Fechafin; ?></td>
+											</tr>
+										<?php } ?>
 									</tbody>
 								</table>
 							</div>
@@ -88,20 +86,19 @@
 									<th class="text-center">INICIA</th><th class="text-center">FINALIZA</th></thead>
 									<tbody>
 										<?php	
-										foreach($rs_Renta as $fila){
-											echo '<tr>';
-											echo '<td>'.$fila->Institucio.'</td>';
-											echo '<td>'.$fila->Desde.'</td>';
-											echo '<td>'.$fila->Hasta.'</td>';
-											echo '<td>'.$fila->Porcentaje.'</td>';
-											echo '<td>'.$fila->Exceso.'</td>';
-											echo '<td>'.$fila->Mas.'</td>';
-											echo '<td>'.$fila->Tipo.'</td>';
-											echo '<td>'.$fila->Fechaini.'</td>';
-											echo '<td>'.$fila->Fechafin.'</td>';
-											echo '</tr>';
-										}
-										?>
+										foreach($rs_Renta as $fila){ ?>
+											<tr>
+											<td><?php echo $fila->Institucio; ?></td>
+											<td><?php echo number_format($fila->Desde,2,".",","); ?></td>
+											<td><?php echo number_format($fila->Hasta,2,".",","); ?></td>
+											<td><?php echo number_format($fila->Porcentaje,4,"."," "); ?></td>
+											<td><?php echo number_format($fila->Exceso,2,".",","); ?></td>
+											<td><?php echo number_format($fila->Mas,2,".",","); ?></td>
+											<td><?php echo $fila->Tipo; ?></td>
+											<td><?php echo $fila->Fechaini; ?></td>
+											<td><?php echo $fila->Fechafin; ?></td>
+											</tr>
+										<?php } ?>
 									</tbody>
 								</table>
 							</div>
@@ -115,15 +112,14 @@
 									<th class="text-center">%</th></thead>
 									<tbody>
 										<?php	
-										foreach($rs_Dias as $fila){
-											echo '<tr>';
-											echo '<td>'.$fila->Institucio.'</td>';
-											echo '<td>'.$fila->Desde.'</td>';
-											echo '<td>'.$fila->Hasta.'</td>';
-											echo '<td>'.$fila->Porcentaje.'</td>';
-											echo '</tr>';
-										}
-										?>
+										foreach($rs_Dias as $fila){ ?>
+											<tr>
+											<td><?php echo $fila->Institucio; ?></td>
+											<td><?php echo number_format($fila->Desde,0,"",","); ?></td>
+											<td><?php echo number_format($fila->Hasta,0,"",","); ?></td>
+											<td><?php echo number_format($fila->Porcentaje,4,"."," "); ?></td>
+											</tr>
+										<?php } ?>
 									</tbody>
 								</table>
 							</div>
@@ -137,15 +133,14 @@
 									<th class="text-center">DÍAS</th></thead>
 									<tbody>
 										<?php	
-										foreach($rs_Agui as $fila){
-											echo '<tr>';
-											echo '<td>'.$fila->Institucio.'</td>';
-											echo '<td>'.$fila->Desde.'</td>';
-											echo '<td>'.$fila->Hasta.'</td>';
-											echo '<td>'.$fila->Mas.'</td>';
-											echo '</tr>';
-										}
-										?>
+										foreach($rs_Agui as $fila){ ?>	
+										<tr>
+										<td><?php echo $fila->Institucio ?></td>
+										<td><?php echo number_format($fila->Desde,0," ",","); ?></td>
+										<td><?php echo number_format($fila->Hasta,0," ",","); ?></td>
+										<td><?php echo number_format($fila->Mas,0," ",","); ?></td>
+									    </tr>
+										<?php } ?>
 									</tbody>
 								</table>
 							</div>

@@ -9,4 +9,5 @@
 	<link href="<?php echo base_url("css/css/v_Menu.css")?>" rel="stylesheet" media="all">
 	<link rel="icon" type="image/jpg" href="<?php echo base_url("imagenes/favicon.jpg");?>">
 	<script src="<?php echo base_url("js/jquery.js");?>"></script>
+	<script src="<?php echo base_url("js/jquery.maskedinput.js");?>"></script>
 	<script src="<?php echo base_url("css/js/bootstrap.js");?>"></script>
