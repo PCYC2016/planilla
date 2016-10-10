@@ -213,10 +213,10 @@ border-color:#fff;
 .icon-bar {
     background-color: #fff;
 }
-.pull-left{
+/*.pull-left{
   float: left;
   margin-left: 10px;
-}
+}*/
 nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
   color: #fff;
   background-color:#e14d43;;
