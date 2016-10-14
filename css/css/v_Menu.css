@@ -1,12 +1,4 @@
 /*Para view v_Menu*/
-th {
-  background-color: #60b044;
-  background-image: linear-gradient(#8add6d, #60b044);
-  border-color:#5ca941;
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
-} 
-
 body,html{
   height: 100%;
 }
@@ -221,10 +213,6 @@ border-color:#fff;
 .icon-bar {
     background-color: #fff;
 }
-.pull-left{
-  float: left;
-  margin-left: 10px;
-}
 nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
   color: #fff;
   background-color:#e14d43;;
@@ -242,3 +230,12 @@ nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color:#fff;
 }
+
+/* Para todos los th de las table */
+th {
+  background-color: #60b044;
+  background-image: linear-gradient(#8add6d, #60b044);
+  border-color:#5ca941;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+} 
