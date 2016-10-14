@@ -11,7 +11,7 @@
 	</div>
 	<hr>
 	<div class="container">
-		<div class="col-lg-9 col-xs-12">
+		<div class="col-lg-10 col-xs-12">
 			<div class="panel with-nav-tabs panel-primary">
 				<div class="panel-heading">
 					<ul class="nav nav-tabs">
@@ -26,10 +26,13 @@
 					<div id="Isss" class="tab-content">
 						<div class="tab-pane fade in active">
 						   <div class="col-lg-12 col-xs-12">
+						   	<span style="float:left"><a class="btn btn-primary" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-plus"></span> Agregar</a></span>
+							<br>
+							<br>
 							<table class="table-bordered table-striped table-condensed table-hover">
 								<thead><th class="text-center">INSTITUCIÓN</th><th>DESDE</th><th class="text-center">HASTA</th>
 									<th class="text-center">%</th><th class="text-center">EXCESO</th><th class="text-center">MÁS</th><th class="text-center">FORMA DE CÁLCULO</th>
-									<th class="text-center">INICIA</th><th class="text-center">FINALIZA</th></thead>
+									<th class="text-center">INICIA</th><th class="text-center">FINALIZA</th><th class="text-center">ACCIONES</th></thead>
 									<tbody>
 										<?php	
 										foreach($rs_Isss as $fila){ ?>
@@ -43,6 +46,10 @@
 											<td><?php echo $fila->Tipo; ?></td>
 											<td><?php echo $fila->Fechaini; ?></td>
 											<td><?php echo $fila->Fechafin; ?></td>
+											<td>
+                                            <span style="float:left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
+                                            <span style="float:right"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
+                                            </td>
 											</tr>
 										<?php } ?>
 									</tbody>
@@ -53,10 +60,13 @@
 					<div id="AFP" class="tab-content">
 						<div class="tab-pane fade">
 						   <div class="col-lg-12 col-xs-12">
+						   	<span style="float:left"><a class="btn btn-primary" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-plus"></span> Agregar</a></span>
+							<br>
+							<br>
 							<table class="table-bordered table-striped table-condensed table-hover">
 								<thead><th class="text-center">INSTITUCIÓN</th><th class="text-center">DESDE</th><th class="text-center">HASTA</th>
 									<th class="text-center">%</th><th class="text-center">EXCESO</th><th class="text-center">MÁS</th><th class="text-center">FORMA DE CÁLCULO</th>
-									<th class="text-center">INICIA</th><th class="text-center">FINALIZA</th></thead>
+									<th class="text-center">INICIA</th><th class="text-center">FINALIZA</th><th class="text-center">ACCIONES</th></thead>
 									<tbody>
 										<?php	
 										foreach($rs_AFP as $fila){ ?>
@@ -70,6 +80,10 @@
 											<td><?php echo $fila->Tipo; ?></td>
 											<td><?php echo $fila->Fechaini; ?></td>
 											<td><?php echo $fila->Fechafin; ?></td>
+											<td>
+                                            <span style="float:left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
+                                            <span style="float:right"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
+                                            </td>
 											</tr>
 										<?php } ?>
 									</tbody>
@@ -80,10 +94,13 @@
 					<div id="Renta" class="tab-content">
 						<div class="tab-pane fade">
 						   <div class="col-lg-12 col-xs-12">
+						   	<span style="float:left"><a class="btn btn-primary" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-plus"></span> Agregar</a></span>
+							<br>
+							<br>
 							<table class="table-bordered table-striped table-condensed table-hover">
 								<thead><th class="text-center">TIPO</th><th class="text-center">DESDE</th><th class="text-center">HASTA</th>
 									<th class="text-center">%</th><th class="text-center">EXCESO</th><th class="text-center">MÁS</th><th class="text-center">FORMA DE CÁLCULO</th>
-									<th class="text-center">INICIA</th><th class="text-center">FINALIZA</th></thead>
+									<th class="text-center">INICIA</th><th class="text-center">FINALIZA</th><th class="text-center">ACCIONES</th></thead>
 									<tbody>
 										<?php	
 										foreach($rs_Renta as $fila){ ?>
@@ -97,6 +114,10 @@
 											<td><?php echo $fila->Tipo; ?></td>
 											<td><?php echo $fila->Fechaini; ?></td>
 											<td><?php echo $fila->Fechafin; ?></td>
+											<td>
+                                            <span style="float:left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
+                                            <span style="float:right"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
+                                            </td>
 											</tr>
 										<?php } ?>
 									</tbody>
@@ -107,9 +128,12 @@
 				    <div id="Dias" class="tab-content">
 						<div class="tab-pane fade">
 						   <div class="col-lg-12 col-xs-12">
+						   	<span style="float:left"><a class="btn btn-primary" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-plus"></span> Agregar</a></span>
+							<br>
+							<br>
 							<table class="table-bordered table-striped table-condensed table-hover">
 								<thead><th class="text-center">TIPO</th><th class="text-center">DESDE</th><th class="text-center">HASTA</th>
-									<th class="text-center">%</th></thead>
+									<th class="text-center">%</th><th class="text-center">ACCIONES</th></thead>
 									<tbody>
 										<?php	
 										foreach($rs_Dias as $fila){ ?>
@@ -118,6 +142,10 @@
 											<td><?php echo number_format($fila->Desde,0,"",","); ?></td>
 											<td><?php echo number_format($fila->Hasta,0,"",","); ?></td>
 											<td><?php echo number_format($fila->Porcentaje,4,"."," "); ?></td>
+											<td>
+                                            <span style="float:left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
+                                            <span style="float:right"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
+                                            </td>
 											</tr>
 										<?php } ?>
 									</tbody>
@@ -128,9 +156,12 @@
 					<div id="Agui" class="tab-content">
 						<div class="tab-pane fade">
 						   <div class="col-lg-12 col-xs-12">
+						   	<span style="float:left"><a class="btn btn-primary" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-plus"></span> Agregar</a></span>
+							<br>
+							<br>
 							<table class="table-bordered table-striped table-condensed table-hover">
 								<thead><th class="text-center">TIPO</th><th class="text-center">DESDE</th><th class="text-center">HASTA</th>
-									<th class="text-center">DÍAS</th></thead>
+									<th class="text-center">DÍAS</th><th class="text-center">ACCIONES</th></thead>
 									<tbody>
 										<?php	
 										foreach($rs_Agui as $fila){ ?>	
@@ -139,6 +170,10 @@
 										<td><?php echo number_format($fila->Desde,0," ",","); ?></td>
 										<td><?php echo number_format($fila->Hasta,0," ",","); ?></td>
 										<td><?php echo number_format($fila->Mas,0," ",","); ?></td>
+										<td>
+                                        <span style="float:left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
+                                        <span style="float:right"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
+                                        </td>
 									    </tr>
 										<?php } ?>
 									</tbody>
