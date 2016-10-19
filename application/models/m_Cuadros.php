@@ -37,5 +37,11 @@
  	$rs_Cuadros['rs_Agui'] = $rs_Agui->result();
  	return  $rs_Cuadros;
  	}
+        function i_m_Cuadros($Institucio,$Desde,$Hasta,$Porcentaje,$Exceso,$Mas,$Comentario,$Tipo,$Fechaini,$Fechafin){
+          $ssql ="EXECUTE pc_m_Cuadros_i ?,?,?,?,?,?,?,?,?,?";
+          $params = array($Institucio,$Desde,$Hasta,$Porcentaje,$Exceso,$Mas,$Comentario,$Tipo,$Fechaini,$Fechafin);
+          $rs_Cuadros= $this->db->query($ssql,$params);
+          return  $rs_Cuadros->result();
+        }
  }
  ?> 
