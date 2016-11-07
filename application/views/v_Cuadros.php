@@ -26,7 +26,7 @@
 					<div id="Isss" class="tab-content">
 						<div class="tab-pane fade in active">
 						   <div class="col-lg-12 col-xs-12">
-						   	<span style="float:left"><a class="btn btn-primary" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-plus"></span> Agregar</a></span>
+						   	<span style="float:left"><a class="btn btn-primary" href="<?php echo base_url('c_Cuadros/c_Cuadros_i');?>"><span class="glyphicon glyphicon-plus"></span> Agregar</a></span>
 							<br>
 							<br>
 							<table class="table-bordered table-striped table-condensed table-hover">
@@ -188,7 +188,7 @@
 					</div>	
 					<div class="col-lg-6 col-xs-12 text-left">
 						<br>  	 
-						<button type="submit" name="Regresar" class="btn btn-primary" onclick="history.go(-1)"><< Regresar</button>
+						<button type="submit" name="Regresar" class="btn btn-primary" onclick="window.history.go(-1); return false;"><< Regresar</button>
 					</div>
 				</div>
 			</div>
