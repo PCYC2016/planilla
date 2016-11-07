@@ -3,20 +3,20 @@ class c_Cuadros extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->library('session');
-        $this->load->library('form_validation');
+    $this->load->library('form_validation');
 		//cargo el helper de url, con funciones para trabajo con URL del sitio
 		$this->load->helper('url');
 		$this->load->helper('form');
 		$this->load->helper('html');
-        //cargo el modelo de Cuadros
+    //cargo el modelo de Cuadros
 		$this->load->model('m_Cuadros');
 	}
 	function index(){
 		$loginuser = $this->session->userdata('loginuser');
 		if ($loginuser == TRUE){ 
-        //creo el array con datos de configuración para la vista
+      //creo el array con datos de configuración para la vista
 			$datos_vista = $this->m_Cuadros->get_Cuadros();
-        //cargo la vista pasando los datos de configuacion
+      //cargo la vista pasando los datos de configuracion
 			$this->load->view('v_Head');
 			$this->load->view('v_Header');
 			$this->load->view('v_Cuadros',$datos_vista);
@@ -40,7 +40,7 @@ class c_Cuadros extends CI_Controller {
 			redirect('c_Login/index');
 		}	
 	}
-	function set_Cuadros(){
+	public function set_Cuadros(){
           $Institucio = $this->input->post("txt_Institucio");
           $Desde      = $this->input->post("txt_Desde");
           $Hasta      = $this->input->post("txt_Hasta");
@@ -64,7 +64,10 @@ class c_Cuadros extends CI_Controller {
           $this->form_validation->set_rules("txt_Fechafin", "Fecha fin", "trim|required");
 
           if ($this->form_validation->run() == FALSE){
-             redirect('c_Cuadros/c_Cuadros_i');
+              $this->load->view('v_Head');
+              $this->load->view('v_Header');
+              $this->load->view('v_Cuadros_i');
+              $this->load->view('v_Foot');
           }
           else{
                if ($this->input->post('btn_guardar') == "Guardar"){

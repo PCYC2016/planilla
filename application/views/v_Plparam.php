@@ -109,7 +109,7 @@
                          </div>
                          <div class="form-group">
                               <div class="col-lg-12 col-xs-12 text-left">
-                                   <button type="submit" name="Regresar" class="btn btn-primary" onclick="history.back()"><< Regresar</button>
+                                   <button type="submit" name="Regresar" class="btn btn-primary" onclick="window.history.go(-1); return false;"><< Regresar</button>
                                    <input id="btn_cancel" name="btn_cancel" type="reset" class="btn btn-primary" value="Restablecer" />
                               </div>
                          </div>

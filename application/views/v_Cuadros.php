@@ -188,7 +188,7 @@
 					</div>	
 					<div class="col-lg-6 col-xs-12 text-left">
 						<br>  	 
-						<button type="submit" name="Regresar" class="btn btn-primary" onclick="history.go(-1)"><< Regresar</button>
+						<button type="submit" name="Regresar" class="btn btn-primary" onclick="window.history.go(-1); return false;"><< Regresar</button>
 					</div>
 				</div>
 			</div>
