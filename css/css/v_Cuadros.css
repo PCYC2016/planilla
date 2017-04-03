@@ -1,7 +1,7 @@
 .with-nav-tabs.panel-primary .nav-tabs > li > a,
 .with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
 .with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
-    color: #fff;
+    color: #fff; 
 }
 .with-nav-tabs.panel-primary .nav-tabs > .open > a,
 .with-nav-tabs.panel-primary .nav-tabs > .open > a:hover,
@@ -20,22 +20,3 @@
     border-color: #428bca;
     border-bottom-color: transparent;
 }
-  /*Para view v_Cuadros_i.php*/
-  .colbox{
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .inicio{
-    margin-left:100px;
-  } 
- span.inicio{
-  	margin-left:15px;
-    text-align:center;
-  }
-  .well{
-    position:relative;
-    margin-left:10px;
-  }
-  legend {
-    text-align:center;
-  }
