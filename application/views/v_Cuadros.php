@@ -47,8 +47,8 @@
 											<td><?php echo $fila->Fechaini; ?></td>
 											<td><?php echo $fila->Fechafin; ?></td>
 											<td>
-                                            <span style="float:left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
-                                            <span style="float:right"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
+                                            <span class="pull-left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
+                                            <span class="pull-left"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
                                             </td>
 											</tr>
 										<?php } ?>
@@ -81,8 +81,8 @@
 											<td><?php echo $fila->Fechaini; ?></td>
 											<td><?php echo $fila->Fechafin; ?></td>
 											<td>
-                                            <span style="float:left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
-                                            <span style="float:right"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
+                                            <span class="pull-left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
+                                            <span class="pull-left"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
                                             </td>
 											</tr>
 										<?php } ?>
@@ -115,8 +115,8 @@
 											<td><?php echo $fila->Fechaini; ?></td>
 											<td><?php echo $fila->Fechafin; ?></td>
 											<td>
-                                            <span style="float:left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
-                                            <span style="float:right"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
+                                            <span class="pull-left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
+                                            <span class="pull-left"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
                                             </td>
 											</tr>
 										<?php } ?>
@@ -143,8 +143,8 @@
 											<td><?php echo number_format($fila->Hasta,0,"",","); ?></td>
 											<td><?php echo number_format($fila->Porcentaje,4,"."," "); ?></td>
 											<td>
-                                            <span style="float:left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
-                                            <span style="float:right"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
+                                            <span class="pull-left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
+                                            <span class="pull-left"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
                                             </td>
 											</tr>
 										<?php } ?>
@@ -171,8 +171,8 @@
 										<td><?php echo number_format($fila->Hasta,0," ",","); ?></td>
 										<td><?php echo number_format($fila->Mas,0," ",","); ?></td>
 										<td>
-                                        <span style="float:left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
-                                        <span style="float:right"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
+                                        <span class="pull-left"><a class="btn btn-primary" href="update.php?id='.$row['id'].'"><span class="glyphicon glyphicon-pencil"></span></a></span>
+                                        <span class="pull-left"><a class="btn btn-danger" href="delete.php?id='.$row['id'].'"><span class="glyphicon glyphicon-trash"></span></a></span>
                                         </td>
 									    </tr>
 										<?php } ?>

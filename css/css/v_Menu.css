@@ -195,7 +195,12 @@ section{
   margin-top:9px;
 }
 header {
- background-color:#363b3f;  
+ background-color:#293742;  
+}
+footer{
+  position:relative;
+  bottom:0;
+  width:100%;
 }
 .Cerrar{
   margin-top:8px;
