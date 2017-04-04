@@ -20,3 +20,12 @@
     border-color: #428bca;
     border-bottom-color: transparent;
 }
+.iniccio {
+    margin-left:0px; 
+    }
+.row{
+    margin-left:-5px;
+}
+legend {
+text-align:center;
+}
